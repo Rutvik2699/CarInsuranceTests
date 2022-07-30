@@ -377,6 +377,7 @@ public class CarInsuranceTest
             Assert.That(value, Is.EqualTo("$1350"));
         }
     }
+
     [Test]
     public void carInsurance_35and17and1_InvalidPostalCode()
     {
@@ -406,6 +407,7 @@ public class CarInsuranceTest
         Assert.That(driver.FindElement(By.Id("postalCode-error")).Text, Is.EqualTo("Postal Code must follow the pattern A1A 1A1"));
     }
     [Test]
+
     public void carInsurance_37and8_NumberOfFaultsOmitted()
     {
         //arrange
@@ -430,6 +432,8 @@ public class CarInsuranceTest
         Assert.That(driver.FindElement(By.Id("accidents-error")).Text, Is.EqualTo("Number of accidents is required"));
     }
     [Test]
+
+
     public void carInsurance_45and0_DrivingExpOmitted()
     {
         //arrange
